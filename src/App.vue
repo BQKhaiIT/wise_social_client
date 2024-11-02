@@ -1,6 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import IndexComponent from './views/IndexComponent.vue';
+import AuthComponent from './views/AuthComponent.vue';
+import MyProfileComponent from './views/MyProfileComponent.vue';
+import UserProfileComponent from './views/UserProfileComponent.vue';
+import MessageComponent from './views/MessageComponent.vue';
 </script>
 
 <template>
@@ -8,9 +12,12 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       
       <nav>
-        <!-- <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/base">ParentComponent</RouterLink> -->
+        <RouterLink to="/auth">Login and Register</RouterLink>
+        <RouterLink to="/index">Index</RouterLink>
+        <RouterLink to="/my-profile">MyProfile</RouterLink>
+        <RouterLink to="/user-profile">UserProfile</RouterLink>
+        <RouterLink to="/message">Message</RouterLink>
+
       </nav>
     </div>
   </header>
