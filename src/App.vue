@@ -8,7 +8,7 @@ import MessageComponent from './views/MessageComponent.vue';
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <div class="wrapper">
       
       <nav>
@@ -20,9 +20,9 @@ import MessageComponent from './views/MessageComponent.vue';
 
       </nav>
     </div>
-  </header>
+  </header> -->
 
-  <!-- <RouterView /> -->
+  <RouterView />
 </template>
 <script>
   export default {
