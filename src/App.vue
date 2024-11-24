@@ -1,7 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import IndexComponent from './views/IndexComponent.vue';
+import { RouterLink, RouterView } from 'vue-router';
 import AuthComponent from './views/AuthComponent.vue';
+import IndexComponent from './views/IndexComponent.vue';
 import MyProfileComponent from './views/MyProfileComponent.vue';
 import UserProfileComponent from './views/UserProfileComponent.vue';
 import MessageComponent from './views/MessageComponent.vue';
@@ -10,14 +10,12 @@ import MessageComponent from './views/MessageComponent.vue';
 <template>
   <!-- <header>
     <div class="wrapper">
-      
       <nav>
-        <RouterLink to="/auth">Login and Register</RouterLink>
+        <RouterLink to="/auth">Login & Register</RouterLink>
         <RouterLink to="/index">Index</RouterLink>
         <RouterLink to="/my-profile">MyProfile</RouterLink>
         <RouterLink to="/user-profile">UserProfile</RouterLink>
         <RouterLink to="/message">Message</RouterLink>
-
       </nav>
     </div>
   </header> -->
@@ -33,6 +31,7 @@ import MessageComponent from './views/MessageComponent.vue';
     }
   }
 </script>
+
 <style scoped>
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <h1>
-            My profile
+            My profiles
         </h1>
     </div>
 </template>

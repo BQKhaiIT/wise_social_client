@@ -10,6 +10,7 @@
                             <td>#</td>
                             <td>Email</td>
                             <td>Address</td>
+                            <td>Action</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,7 +37,7 @@
         /***********************************************************************************************************
          ******************************* Pass data to child component **********************************************
          **********************************************************************************************************/
-        // prop: [variable1, variable2],
+        // props: [variable1, variable2],
         // components: {component1, component2},
         data() {
             /***********************************************************************************************************
@@ -104,16 +105,16 @@
              */
             async callAPI() {
                 try {
-                    const callAPI = await axios.get('http://demoapi.test/public/api/list-user', {
+                    const callAPI = await axios.get('http://localhost/DemoAPI/public/api/list-user', {
                         /************ Attach param for request here ***************/
                         headers: {
-                            "Content-Type" : "application/json",
-                            "Authorization" : "Bearer 6|8ynj61Nqi1KLW78eLltQGhh239Q3P0NmgrC5XBJU",
+                            "Content-type" : "application/json",
+                            "Authorization": "Bearer 28|TK2GDxdOitONowsftHVRRJhZeYFBZR2tQwdJjoSKfe2d9037" 
                         }
                     });
-                    if (callAPI.data.code == 200){
+                    if (callAPI.data.code == 200) {
                         this.users = callAPI.data.data;
-                    }else {
+                    } else {
                         alert("Call api failed, please check again!");
                     }
                 } catch (err) {
@@ -122,18 +123,18 @@
             },
             async deleteUser(id) {
                 try {
-                    const callAPI = await axios.delete('http://demoapi.test/public/api/delete-user/' + id, {
+                    const callAPI = await axios.delete('http://localhost/DemoAPI/public/api/delete-user/' + id, {
                         /************ Attach param for request here ***************/
                         headers: {
-                            "Content-Type" : "application/json",
-                            "Authorization" : "Bearer 6|8ynj61Nqi1KLW78eLltQGhh239Q3P0NmgrC5XBJU",
+                            "Content-type" : "application/json",
+                            "Authorization": "Bearer 28|TK2GDxdOitONowsftHVRRJhZeYFBZR2tQwdJjoSKfe2d9037" 
                         }
                     });
                     this.callAPI();
                 } catch (err) {
                     console.log(err);
                 }
-            },
+            }
         },
     }
 </script>
