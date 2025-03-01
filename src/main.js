@@ -18,6 +18,8 @@ app.use(new VueSocketIO({
     }
 }));
 
+
+
 app.use(router)
 
 app.mount('#app')

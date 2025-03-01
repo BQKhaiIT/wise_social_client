@@ -9,7 +9,7 @@
                 <div class="search-bar">
                     <form>
                         <input v-on:keyup="search()" type="text" name="search" placeholder="検索..." v-model="keyWord">
-                    </form>
+                    </form> 
                     <div v-if="searchStatus" class="" id="area-chat">
                         <div v-for="user in users" class="account-item">
                             <div class="avatar">
